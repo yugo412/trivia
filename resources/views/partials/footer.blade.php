@@ -4,9 +4,9 @@
     <div class="row text-center align-items-center flex-row-reverse">
       <div class="col-lg-auto ms-lg-auto">
         <ul class="list-inline list-inline-dots mb-0">
-          <li class="list-inline-item"><a href="https://tabler.io/docs" target="_blank" class="link-secondary"
-                                          rel="noopener">Documentation</a></li>
-          <li class="list-inline-item"><a href="./license.html" class="link-secondary">License</a></li>
+          <li class="list-inline-item"><a href="{{ url('/tos') }}" target="_blank" class="link-secondary"
+                                          rel="noopener">@lang('Term of Service')</a></li>
+          <li class="list-inline-item"><a href="{{ url('/faq') }}" class="link-secondary">@lang('FAQ')</a></li>
           <li class="list-inline-item"><a href="https://github.com/tabler/tabler" target="_blank"
                                           class="link-secondary" rel="noopener">Source code</a></li>
           <li class="list-inline-item">

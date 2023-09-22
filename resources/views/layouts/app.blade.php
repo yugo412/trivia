@@ -30,8 +30,8 @@
 <body>
 <div class="page">
   <!-- Navbar -->
-  @include('partials.header')
-{{--  @include('partials.nav')--}}
+  @includeWhen(!isset($header) || $header, 'partials.header')
+  @includeWhen(!isset($nav) || $nav, 'partials.nav')
 
   <div class="page-wrapper">
     <!-- Page header -->
@@ -49,7 +49,7 @@
     <!-- Page body -->
     @yield('content')
 
-    @include('partials.footer')
+    @includeWhen(!isset($footer) || $footer, 'partials.footer')
   </div>
 </div>
 <!-- Libs JS -->
